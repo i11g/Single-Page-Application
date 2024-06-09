@@ -1,10 +1,11 @@
-import page from '../node_modules/page/page.mjs'
 import {html} from '../node_modules/lit-html/lit-html.js'
+import {event} from '../utils/evenHandlers.js'
 
-export function logIn() {
+
+export function getlogInTemplate() {
     return html `
      <section id="login-page" class="auth">
-            <form id="login">
+            <form id="login" @submit =${event.onLoginSubmit}>
 
                 <div class="container">
                     <div class="brand-logo"></div>
@@ -16,7 +17,7 @@ export function logIn() {
                     <input type="password" id="login-password" name="password">
                     <input type="submit" class="btn submit" value="Login">
                     <p class="field">
-                        <span>If you don't have profile click <a href="#">here</a></span>
+                        <span>If you don't have profile click <a href="/register">here</a></span>
                     </p>
                 </div>
             </form>

@@ -1,7 +1,10 @@
-import {home } from './home.js'
-import {nav} from './nav.js' 
+import {getHomeTemplate } from './home.js'
+import {getNavTemplates} from './nav.js' 
+import {getlogInTemplate} from './login.js'
 
 export const templates= {
-    getUserTemplate,
-    getNavTemplates
+    getHomeTemplate,
+    getNavTemplates,
+    getlogInTemplate
+
 }

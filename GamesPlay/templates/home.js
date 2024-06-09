@@ -1,6 +1,6 @@
 import {html} from '../node_modules/lit-html/lit-html.js';
 
-export function getUserTemplate(games){
+export function getHomeTemplate(games){
     return html`
        <section id="welcome-world">
             <div class="welcome-message">

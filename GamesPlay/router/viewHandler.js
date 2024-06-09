@@ -12,12 +12,17 @@ async function homeView(ctx) {
     render(templates.getHomeTemplate(games), mainElement)
 } 
 
-function navView(ctx) {
+function navView(ctx, next) {
     render(templates.getNavTemplates(), headElement)
     next(); 
+} 
+
+async function logInView(ctx) {
+    render(templates.getlogInTemplate(), mainElement)
 }
 
 export const viewHandler={
     homeView,
-    navView
+    navView,
+    logInView
 }
