@@ -5,6 +5,8 @@ function start () {
     page(viewHandler.navView)
     page('/', viewHandler);
     page ('/login', viewHandler.logInView)
+    page('/logout', viewHandler.logoutView)
+    page('/register', viewHandler.registerView)
 
     page.start
 }

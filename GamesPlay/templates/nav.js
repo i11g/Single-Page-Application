@@ -12,8 +12,7 @@ export function getNavTemplates() {
             <div id="user">
                 <a href="create">Create Game</a>
                 <a href="logout">Logout</a>
-            </div>
-            `
+            </div> `
             :html`                 
             <!-- Guest users -->
             <div id="guest">

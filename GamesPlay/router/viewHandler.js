@@ -1,7 +1,7 @@
 import {render} from '../node_modules/lit-html/lit-html.js'
 import page from '../node_modules/page/page.mjs'
 
-import {games} from '../api/requests.js'
+import {games, request} from '../api/requests.js'
 import {templates} from '../templates.js'
 
 let mainElement=document.querySelector('#box #main-content')
@@ -19,10 +19,27 @@ function navView(ctx, next) {
 
 async function logInView(ctx) {
     render(templates.getlogInTemplate(), mainElement)
-}
+} 
+
+async function registerView(ctx) {
+    render (templates.getRegisterTemplate (), mainElement) 
+
+}  
+
+function logoutView (ctx) {
+    request.user.logOut() 
+    .then(response=> {
+        if(response.status==204) {
+            sessionStorage.removeItem('game-user')
+            page.redirect('/')
+        }
+        })
+    }
 
 export const viewHandler={
     homeView,
     navView,
-    logInView
+    logInView,
+    registerView,
+    logoutView
 }
