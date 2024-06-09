@@ -10,15 +10,15 @@ export function getNavTemplates() {
         ${userInfo.getUserObj() 
             ? html`
             <div id="user">
-                <a href="#">Create Game</a>
-                <a href="#">Logout</a>
+                <a href="create">Create Game</a>
+                <a href="logout">Logout</a>
             </div>
             `
             :html`                 
             <!-- Guest users -->
             <div id="guest">
-                <a href="#">Login</a>
-                <a href="#">Register</a>
+                <a href="login">Login</a>
+                <a href="register">Register</a>
             </div>            
             `}        
     </nav>`;   

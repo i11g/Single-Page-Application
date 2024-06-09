@@ -3,7 +3,6 @@ import {html} from '../node_modules/lit-html/lit-html.js';
 export function getUserTemplate(games){
     return html`
        <section id="welcome-world">
-
             <div class="welcome-message">
                 <h2>ALL new games are</h2>
                 <h3>Only in GamesPlay</h3>
@@ -11,7 +10,6 @@ export function getUserTemplate(games){
             <img src="../images/four_slider_img01.png" alt="hero">
             <div id="home-page">
                 <h1>Latest Games</h1>
-
                 <!-- Display div: with information about every game (if any) -->
 
                 ${games&&games.length>0 
@@ -30,16 +28,10 @@ export function getUserTemplate(games){
                 </div>`) 
                 : html `<!-- Display paragraph: If there is no games  -->
                 <p class="no-articles">No games yet</p>`
-
-                }
-
-                              
-
-                <!-- Display paragraph: If there is no games  -->
-                <p class="no-articles">No games yet</p>
+                }                        
+             
             </div>
-        </section>
-    
+        </section> 
     
     `
 }

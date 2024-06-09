@@ -8,10 +8,16 @@ let mainElement=document.querySelector('#box #main-content')
 let headElement=document.querySelector('#box header')
 
 async function homeView(ctx) {
-    return await request.games,getMostRecentGames()
+    let games=await request.games.getMostRecentGames()
     render(templates.getHomeTemplate(games), mainElement)
+} 
+
+function navView(ctx) {
+    render(templates.getNavTemplates(), headElement)
+    next(); 
 }
 
 export const viewHandler={
-    homeView
+    homeView,
+    navView
 }

@@ -1,5 +1,7 @@
-import {home } from './home.js' 
+import {home } from './home.js'
+import {nav} from './nav.js' 
 
-export const templates={
-    getUserTemplate
+export const templates= {
+    getUserTemplate,
+    getNavTemplates
 }
