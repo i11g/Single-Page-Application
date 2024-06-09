@@ -1,5 +1,5 @@
 import {render} from '../node_modules/lit-html/lit-html.js'
-import {page} from '../node_modules/page/page.mjs'
+import page from '../node_modules/page/page.mjs'
 
 import {games} from '../api/requests.js'
 import {templates} from '../templates.js'
