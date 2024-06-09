@@ -6,6 +6,6 @@ async function getMostRecentGames() {
     .then(items=>items)
     } 
 
-    export const games={
+    export const games = {
         getMostRecentGames
     }
