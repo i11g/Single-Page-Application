@@ -7,6 +7,7 @@ function start () {
     page ('/login', viewHandler.logInView)
     page('/logout', viewHandler.logoutView)
     page('/register', viewHandler.registerView)
+    page('/catalog', viewHandler.catalogView)
 
     page.start
 }

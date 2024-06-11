@@ -34,12 +34,18 @@ function logoutView (ctx) {
             page.redirect('/')
         }
         })
-    }
+    } 
+
+async function catalogView(ctx) {
+    let games=await request.games.getAll
+    render(templates.getCatalogTemplate(games), mainElement)
+} 
 
 export const viewHandler={
     homeView,
     navView,
     logInView,
     registerView,
-    logoutView
+    logoutView,
+    catalogView
 }
