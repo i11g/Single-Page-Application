@@ -41,6 +41,10 @@ async function catalogView(ctx) {
     render(templates.getCatalogTemplate(games), mainElement)
 } 
 
+function createView(ctx) {
+    render(templates.getCreateView(), mainElement)
+}
+
 export const viewHandler={
     homeView,
     navView,
