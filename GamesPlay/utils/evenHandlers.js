@@ -25,7 +25,7 @@ async function onLoginSubmit(event) {
     })
 }   
 
-   async function onRegisterSubmit (event) {
+async function onRegisterSubmit (event) {
       event.preventDefault(); 
       
       let formData=new FormData(event.currentTarget);
@@ -60,15 +60,54 @@ async function onLoginSubmit(event) {
     }
 }
 
-    export const event= {
+async function onCreateSubmit(event) {
+    event.preventDefault() ;
+
+    let formData=new FormData(event.currentTarget) 
+
+    let {title, category, imageUrl, summary, maxLevel} =Object.fromEntries(formData) 
+
+    if(isValidCreatingOrEditing(title, category, imageUrl, summary, maxLevel)) {
+          let item= {
+            title,
+            category,
+            imageUrl,
+            summary,
+            maxLevel
+          }
+    
+    request.games.create(item)
+    .then(response=>{
+        if(!response.ok) {
+            throw new Error("Canno create a game") 
+        }
+        return response.json()
+    })
+    .then (game=> {
+        page.redirect('/')
+    })
+    .catch(error=>alert(error.message))
+   } else {
+    alert("All fields are required")
+   } 
+}
+
+export const event= {
         onLoginSubmit,
-        onRegisterSubmit
+        onRegisterSubmit,
+        onCreateSubmit
     } 
 
-    function isValidRegister (email,password,repass) {
+function isValidRegister (email,password,repass) {
         if(email==''||password==''||repass==''||repass!=passqord) {
             return false
         }
         return true;
+    } 
+function isValidCreatingOrEditing(title, category, imageUrl, summary, maxLevel) {
+    if(title==''||category==''||maxLevel==''||summary==''||imageUrl=='') {
+        return false
     }
+    return true 
+} 
 

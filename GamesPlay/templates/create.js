@@ -1,7 +1,7 @@
 import {html} from "../node_modules/lit-html/lit-html.js"
 import {event} from '../utils/evenHandlers.js'
 
-export function getCreateView() {
+export function getCreateTemplate() {
     return html`       
         <section id="create-page" class="auth">
             <form id="create" @submit=${event.onCreateSubmit}>

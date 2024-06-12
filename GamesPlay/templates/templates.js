@@ -3,7 +3,7 @@ import {getNavTemplates} from './nav.js'
 import {getlogInTemplate} from './login.js'
 import {getRegisterTemplate} from './register.js'
 import { getCatalogTemplate } from './catalog.js'
-import {getCreateView} from './create.js'
+import {getCreateTemplate} from './create.js'
 
 export const templates= {
     getHomeTemplate,
@@ -11,6 +11,6 @@ export const templates= {
     getlogInTemplate,
     getRegisterTemplate,
     getCatalogTemplate,
-    getCreateView 
+    getCreateTemplate 
 
 }

@@ -42,7 +42,7 @@ async function catalogView(ctx) {
 } 
 
 function createView(ctx) {
-    render(templates.getCreateView(), mainElement)
+    render(templates.getCreateTemplate(), mainElement)
 }
 
 export const viewHandler={
@@ -51,5 +51,6 @@ export const viewHandler={
     logInView,
     registerView,
     logoutView,
-    catalogView
+    catalogView, 
+    createView
 }
