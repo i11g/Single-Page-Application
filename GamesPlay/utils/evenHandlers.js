@@ -92,10 +92,36 @@ async function onCreateSubmit(event) {
    } 
 }
 
+function onCommentSubmit(event) {
+  event.preventDefault() 
+
+  let formData=new FormData(event.currentTarget)
+  let comment=formData.get('comment')
+
+  let gameId=event.currentTarget.getAttribute('gameid')
+  
+  let form=event.currenttarget 
+  
+  request.comments.postNew({gameId, comment})
+  .then(response=>{
+    if(!response.ok) {
+        throw new Error("Unable to send comment")
+    }
+    return response.json()
+  })
+  .then(comment=>{
+    form.reset();
+    page.redirect(`/details${gameId}`)
+  })
+  .catch(error=>
+    alert(error.massage)) 
+}
+
 export const event= {
         onLoginSubmit,
         onRegisterSubmit,
-        onCreateSubmit
+        onCreateSubmit,
+        onCommentSubmit
     } 
 
 function isValidRegister (email,password,repass) {
