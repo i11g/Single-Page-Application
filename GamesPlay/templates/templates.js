@@ -4,6 +4,7 @@ import {getlogInTemplate} from './login.js'
 import {getRegisterTemplate} from './register.js'
 import { getCatalogTemplate } from './catalog.js'
 import {getCreateTemplate} from './create.js'
+import {getDetailsTemplate } from './details.js'
 
 export const templates= {
     getHomeTemplate,
@@ -11,6 +12,6 @@ export const templates= {
     getlogInTemplate,
     getRegisterTemplate,
     getCatalogTemplate,
-    getCreateTemplate 
-
+    getCreateTemplate,
+    getDetailsTemplate 
 }
