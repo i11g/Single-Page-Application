@@ -11,7 +11,7 @@ This repository contains Single Page Application
 * [License](#license) 
 
 ## General Information
-The repo contains all the amterials for the Single Page Application Game Play
+The project contains all the matrials for the construction of Single Page Application: Game Play
 
 
 ## Technologies Used
