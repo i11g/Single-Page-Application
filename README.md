@@ -1,11 +1,10 @@
 # Single Page Application 
-This repository contains my Single Page Application developed as part og the course Front End Authomation 
+This repository contains my Single Page Application project developed as part of the course Front End Technologies. 
 
 
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
-* [Features](#features)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
 * [License](#license) 
