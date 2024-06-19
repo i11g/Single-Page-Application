@@ -1,5 +1,5 @@
 # Single Page Application 
-This repository contains Single Page Application
+This repository contains my Single Page Application developed as part og the course Front End Authomation 
 
 
 ## Table of Contents
