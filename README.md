@@ -1,5 +1,5 @@
 # Single Page Application 
-This repository contains my Single Page Application project developed as part of the course Front End Technologies. 
+This repository contains a Single Page Application project developed as part of Front End Technologies course. 
 
 
 ## Table of Contents
