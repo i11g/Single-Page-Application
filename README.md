@@ -10,8 +10,7 @@ This repository contains a Single Page Application project developed as part of 
 * [License](#license) 
 
 ## General Information
-The project contains all the matrials for the construction of Single Page Application: Game Play
-
+The project contains all the matrials for the construction of Single Page Application
 
 ## Technologies Used
 - HTML 5, CSS and Java Script
