@@ -1,5 +1,5 @@
 # Single Page Application 
-This repository contains a Single Page Application project developed as part of Front End Technologies course. 
+This repository shows Single Page Application development as part of Front End Technologies course. 
 
 
 ## Table of Contents
@@ -10,7 +10,7 @@ This repository contains a Single Page Application project developed as part of 
 * [License](#license) 
 
 ## General Information
-The project contains all the matrials for the construction of Single Page Application
+The project contains Single Page Application developed using ...
 
 ## Technologies Used
 - HTML 5, CSS and Java Script
