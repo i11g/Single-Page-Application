@@ -1,18 +1,16 @@
 # Single Page Application 
-This repository contains Single Page Application
+This repository shows Single Page Application development as part of Front End Technologies course. 
 
 
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
-* [Features](#features)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
 * [License](#license) 
 
 ## General Information
-The repo contains all the amterials for the Single Page Application Game Play
-
+The project contains Single Page Application developed via modules and using a skeleton provided by SoftUni.
 
 ## Technologies Used
 - HTML 5, CSS and Java Script
