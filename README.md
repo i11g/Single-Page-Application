@@ -1,5 +1,5 @@
 # Single Page Application 
-This repository shows Single Page Application development as part of Front End Technologies course. 
+This repository shows Single Page Application development as part of Front End Technologies Course. 
 
 
 ## Table of Contents
