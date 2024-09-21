@@ -33,11 +33,9 @@ export function getHomeTemplate (games) {
                     <!-- Display paragraph: If there is no games  -->
                     <p class="no-articles">No games yet</p>
                     `
-                }                             
-
-                
+                }                          
+               
             </div>
-        </section>
-    `;
+        </section> `;
 }
     
