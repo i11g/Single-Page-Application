@@ -1,7 +1,6 @@
 # Single Page Application 
 This repository shows Single Page Application development as part of Front End Technologies Course. 
 
-
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
@@ -10,10 +9,11 @@ This repository shows Single Page Application development as part of Front End T
 * [License](#license) 
 
 ## General Information
-The project contains Single Page Application developed via modules and using a skeleton provided by SoftUni.
+The project contains Single Page Application developed by modules arhitecture and using a skeleton provided by SoftUni.
 
 ## Technologies Used
-- HTML 5, CSS and Java Script
+- HTML 5, CSS and Java Script;
+- lint HTML
 
 ## Acknowledgements
 
